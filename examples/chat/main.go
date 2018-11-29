@@ -6,7 +6,6 @@ import (
 	"flag"
 	"os"
 	"strings"
-	"fmt"
 
 	"github.com/perlin-network/noise/crypto/ed25519"
 	"github.com/perlin-network/noise/examples/chat/messages"
@@ -33,7 +32,6 @@ func main() {
 	hostFlag := flag.String("host", "localhost", "host to listen to")
 	protocolFlag := flag.String("protocol", "tcp", "protocol to use (kcp/tcp)")
 	peersFlag := flag.String("peers", "", "peers to connect to")
-	fmt.Println("main chat test!!!!!!!")
 	flag.Parse()
 
 	port := uint16(*portFlag)
